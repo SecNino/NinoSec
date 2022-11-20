@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+}
+
+:root{
+    --main-color: #f5f5ff;
+    --second-color: #ffffff;
+
+}
+
+@font-face {
+    font-family: "NinoSec";
+    src: url(./font/SecularOne-Regular.ttf);
+}
+
+.full-page{
+    display: flex;
+}
+
+.links{
+    margin: 5rem;
+}
+
+.logo img{
+    width: 10rem;
+    margin-left: 5rem;
+}
+
+    
+
+.main{
+    padding: 5%;
+    margin-top: 7vh;
+    color: #f5f5ff;
+    text-shadow: 0px 4px 12px black;
+    text-align:justify;
+}
+
+.main h1{
+    text-align:left;
+    margin-bottom: 2rem;
+
+}
+
+.full-page{
+    min-height: 100vh;
+}
+
+button{
+    color: #fe3a00;
+    font-size: medium;
+    font-weight: bold;
+    padding: 0.1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    cursor:pointer;
+    margin: 1.5rem;
+    margin-top: 10rem;
+}
+
+.background{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100 vh;
+    object-fit: cover;
+    z-index: -1;
+
+ }
+
+@media screen and (max-width : 1024px){
+    .full-page{
+        flex-direction: column;
+
+    } 
+    .logo img {
+        width: 7rem;
+        margin-top: 2rem;
+        margin-left: 1rem;
+    }
+    .background{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        z-index: -1;
+    }  
+
+    .main h3{
+        text-align: center;
+    }
+
+    button{
+        color: #fe3a00;
+        font-size: medium;
+        font-weight: bold;
+        padding: 0.1rem;
+        border: none;
+        border-radius: 0.5rem;
+        background-color: transparent;
+        cursor:pointer;
+        
+
+    }
+}
